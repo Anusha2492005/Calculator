@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    body {
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #calculator {
+      width: 500px;
+      background-color: black;
+      border-radius: 30px;
+      padding: 20px;
+      margin: auto;
+    }
+
+    #display {
+      background-color: rgb(22, 21, 21);
+      color: white;
+      text-align: right;
+      padding: 20px 10px;
+      border-radius: 10px;
+     
+     
+   
+      font-family: Arial, sans-serif;
+    }
+
+    #display .expression {
+      font-size: 24px;
+    }
+
+    #display .result {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    #container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      padding: 20px;
+      background-color: rgb(20, 20, 20);
+      border-radius: 20px;
+    }
+
+    #container > div {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 26px;
+      border-radius: 25px;
+      height: 80px;
+      width: 80px;
+    }
+
+    #container > div:hover {
+      background-color: red;
+      cursor: pointer;
+    }
+
+    .operator {
+      background-color: orange !important;
+      color: white;
+    }
+
+    .grey {
+      background-color: #a5a5a5 !important;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="calculator">
+    <div id="display">
+      <div class="expression">38,670 ÷ 50,000</div>
+      <div class="result">0.7734</div>
+    </div>
+
+    <div id="container">
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div class="grey">AC</div>
+      <div class="operator">/</div>
+
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div class="grey">+/-</div>
+      <div class="operator">X</div>
+
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div class="grey">%</div>
+      <div class="operator">-</div>
+
+      <div></div>
+      <div>0</div>
+      <div>.</div>
+      <div class="operator">=</div>
+      <div class="operator">+</div>
+    </div>
+  </div>
+
+</body>
+</html>
