@@ -21,7 +21,6 @@
       background-color: black;
       border-radius: 30px;
       padding: 20px;
-      margin: auto;
     }
 
     #display {
@@ -30,18 +29,7 @@
       text-align: right;
       padding: 20px 10px;
       border-radius: 10px;
-     
-     
-   
-      font-family: Arial, sans-serif;
-    }
-
-    #display .expression {
-      font-size: 24px;
-    }
-
-    #display .result {
-      font-size: 28px;
+      font-size: 32px;
       font-weight: bold;
     }
 
@@ -49,33 +37,29 @@
       display: grid;
       grid-template-columns: repeat(5, 1fr);
       gap: 20px;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       padding: 20px;
       background-color: rgb(20, 20, 20);
       border-radius: 20px;
     }
 
-    #container > div {
+    #container button {
       background-color: #333;
       color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       font-weight: bold;
       font-size: 26px;
       border-radius: 25px;
       height: 80px;
       width: 80px;
+      border: none;
     }
 
-    #container > div:hover {
+    #container button:hover {
       background-color: red;
       cursor: pointer;
     }
 
     .operator {
       background-color: orange !important;
-      color: white;
     }
 
     .grey {
@@ -87,37 +71,35 @@
 <body>
 
   <div id="calculator">
-    <div id="display">
-      <div class="expression">38,670 ÷ 50,000</div>
-      <div class="result">0.7734</div>
-    </div>
+    <div id="display">0</div>
 
     <div id="container">
-      <div>7</div>
-      <div>8</div>
-      <div>9</div>
-      <div class="grey">AC</div>
-      <div class="operator">/</div>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="grey">AC</button>
+      <button class="operator">/</button>
 
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div class="grey">+/-</div>
-      <div class="operator">X</div>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="grey">+/-</button>
+      <button class="operator">X</button>
 
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div class="grey">%</div>
-      <div class="operator">-</div>
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="grey">%</button>
+      <button class="operator">-</button>
 
-      <div></div>
-      <div>0</div>
-      <div>.</div>
-      <div class="operator">=</div>
-      <div class="operator">+</div>
+      <button></button>
+      <button>0</button>
+      <button>.</button>
+      <button class="operator">=</button>
+      <button class="operator">+</button>
     </div>
   </div>
 
+  <script src="calculator.js"></script>
 </body>
 </html>
